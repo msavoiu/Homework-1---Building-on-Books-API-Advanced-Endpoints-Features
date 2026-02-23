@@ -56,6 +56,25 @@ public class BookController {
         return books;
     }
 
+    // ADDED ENDPOINTS: //////////////////////////////////////////////////////////////////////////////////////////
+
+    // PUT endpoint (update book)
+    @PutMapping("/books/{id}")
+
+    // PATCH endpoint (partial update)
+    @PatchMapping("/books/{id}")
+
+    // DELETE endpoint (remove book)
+    @DeleteMapping("/books/{id}")
+
+    // GET endpoint with pagination (offset and limit pagination)
+    @GetMapping("/books")
+
+    // Advanced GET endpoint with filtering, sorting, and pagination combined in the valid order
+    @GetMapping("/books")
+
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     // search by title
     @GetMapping("/books/search")
     public List<Book> searchByTitle(
